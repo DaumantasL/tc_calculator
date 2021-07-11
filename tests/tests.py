@@ -1,6 +1,6 @@
 import pytest
 
-from calculator import calculator
+from calculator.operations import calculator
 
 def test_reset():
     calc = calculator(10)
