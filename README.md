@@ -15,40 +15,48 @@ Initialize with `calculator(value)`. Default value of 0.
 
 ### Memory
 
-```
-memory
-Returns number in memory
+ ```
+ memory
+ Returns number in memory
  ```
  
- ```memory = number
+ ```
+ memory = number
  Sets calculator memory to number value provided
  ```
  
- ```reset()
+ ```
+ reset()
  Resets calculator memory to 0
  ```
  ### Operations
 
-```add(number)
+ ```
+ add(number)
  Adds number to number in calculator memory
  ```
  
- ```subtract(number)
+ ```
+ subtract(number)
  Subtracts number from number in calculator memory
  ```
  
-  ```multiply(number)
+ ```
+ multiply(number)
  Multiplies number in calculator memory by number
  ```
  
-  ```divide(number)
+ ```
+ divide(number)
  Divides number in calculator memory by number
  ```
  
-   ```power(number)
+ ```
+ power(number)
  Raises number in calculator memory to n-th power
  ```
  
-   ```root(number)
+ ```
+ root(number)
  Takes n-th root of number in calculator memory
  ```
