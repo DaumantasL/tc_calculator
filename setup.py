@@ -8,7 +8,7 @@ setup(
     version="0.0.1",
     description='Simple memory-based calculator',
     long_description=readme,
-    packages=find_packages(exclude=('tests')),
+    packages=find_packages(),
     install_requires=[], 
     extras_require={
         'test': ['pytest'],
