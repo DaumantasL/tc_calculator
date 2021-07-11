@@ -1,6 +1,6 @@
 import pytest
 
-from calculator.operations import calculator
+from calculator.operations import calculator, CalculatorError
 
 def test_reset():
     calc = calculator(10)
@@ -51,3 +51,25 @@ def test_power():
     result = calc.root(3)
 
     assert result == 27
+
+def test_divide_by_zero():
+    calc = calculator(27)
+
+    with pytest.raises(CalculatorError):
+        calc.divide(0)
+
+def test_zeroth_root():
+    calc = calculator(27)
+
+    with pytest.raises(CalculatorError):
+        calc.root(0)
+
+def test_stringy_init():
+    with pytest.raises(CalculatorError):
+        calc = calculator("ten")
+
+def test_stringy_input():
+    calc = calculator(3)
+    
+    with pytest.raises(CalculatorError):
+        calc.multiply("three")
