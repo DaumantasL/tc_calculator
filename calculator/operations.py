@@ -1,3 +1,5 @@
+import numbers
+
 class CalculatorError(Exception):
     """For calculator errors"""
 
@@ -73,8 +75,6 @@ class calculator:
         return self.__memory
 
     def _check_input(self, input):
-        """Check that input is a number."""
-        try:
-            float(input)
-        except ValueError:
-            return CalculatorError(f'"{input}" is not a number.')
+        """Check that the operand is a number."""
+        if not isinstance(input, numbers.Number):
+            raise CalculatorError(f'"{input}" is not a number.')
