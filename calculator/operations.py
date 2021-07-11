@@ -66,7 +66,7 @@ class calculator:
             self.__memory = self.__memory ** 1/argument
             return self.__memory
         except ZeroDivisionError as ex:
-            raise CalculatorError("You can't divide by zero.") from ex
+            raise CalculatorError("You can not take a 0th root.") from ex
     
     def power(self, argument:float):
         """Takes n-th root of number in calculator memory"""
