@@ -15,8 +15,9 @@ Initialize with `calculator(value)`. Default value of 0.
 
 ### Memory
 
-```memory
- Returns number in memory
+```
+memory
+Returns number in memory
  ```
  
  ```memory = number
