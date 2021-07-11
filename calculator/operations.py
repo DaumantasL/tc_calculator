@@ -53,7 +53,7 @@ class calculator:
         self._check_input(argument)
         try:
             self.__memory = self.__memory / argument
-            return self._memory
+            return self.__memory
         except ZeroDivisionError as ex:
             raise CalculatorError("You can't divide by zero.") from ex
 
@@ -62,7 +62,7 @@ class calculator:
         self._check_input(argument)
         try:
             self.__memory = self.__memory ** 1/argument
-            return self._memory
+            return self.__memory
         except ZeroDivisionError as ex:
             raise CalculatorError("You can't divide by zero.") from ex
     
